@@ -17,7 +17,7 @@ app.set("views", path.join(__dirname, "/views"));
 const connection = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "EdithCozIaim3000Ttlshiwwya",
+  password: "ConfidentialHai",
   database: "app"
 });
 
