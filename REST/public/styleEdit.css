@@ -1,0 +1,29 @@
+/* styleEdit.css code */
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: center; /* Horizontally center */
+    align-items: center;     /* Vertically center */
+    text-align: center;
+}
+button{
+    background-color: maroon;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+    width: 50px;
+    margin: 7px;
+}
+#back_a{
+    color: white;
+    text-decoration: none;
+}
+textarea{
+    width: 300px;
+    height: 100px;
+}
+h2{
+    color: maroon;
+    font-style: italic;
+    text-decoration: underline;
+}
