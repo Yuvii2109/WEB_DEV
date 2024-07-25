@@ -1,0 +1,11 @@
+/* style.css code */
+
+body{
+    background-color: cornsilk;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+img{
+    height: 100px;
+    width: auto;
+    border: 2px solid black;
+}
