@@ -1,0 +1,23 @@
+<!-- new.ejs code -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Chat</title>
+    <link rel="stylesheet" href="/newStyle.css">
+</head>
+<body>
+    <h1>Write new chat - </h1>
+    <form action="/chats" method="POST">
+        <b><u><i>From:</i></u></b> &nbsp;&nbsp;<input type="text" placeholder="Sender" name="from">
+        <br> <br>
+        <textarea name="message" placeholder="Write your message here..."></textarea>
+        <br> <br>
+        <b><u><i>To:</i></u></b> &nbsp;&nbsp;<input type="text" placeholder="Receiver" name="to">
+        <br> <br>
+        <button>Send</button>
+    </form>
+</body>
+</html>
