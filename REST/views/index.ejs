@@ -1,0 +1,34 @@
+<!-- index.ejs code -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Posts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sachdeva Posts</h1>
+    <% for(let post of posts){ %>
+        <div class="post">
+            <h4 class="user">@<%= post.username %></h4>
+            <p class="content"><%= post.content %></p>
+            <br>
+            <a href="http://localhost:3000/posts/<%= post.id %>">See in detail</a>
+            <a href="http://localhost:3000/posts/<%= post.id%>/edit">&nbsp; | &nbsp; Edit</a>
+            <br> <br>
+            <form method="post" action="/posts/<%= post.id %>?_method=DELETE">
+                <button id="delete">Delete</button>
+            </form>
+            <br>
+        </div>
+        <br>
+    <% } %>
+    <br> 
+    <br>
+    <a href="http://localhost:3000/posts/new">+ Create new post</a>
+    <br>
+    <br>
+</body>
+</html>

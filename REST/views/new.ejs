@@ -1,0 +1,22 @@
+<!-- new.ejs code -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create new post</title>
+    <link rel="stylesheet" href="/styleNew.css">
+</head>
+<body>
+    <form method="post" action="/posts">
+        <p class="user">Enter Username - &nbsp;</p>
+        <input type="text" placeholder="@Username" name="username">
+        <br> <br>
+        <p class="content">Enter the content - &nbsp;</p>
+        <textarea name="content" placeholder="Write your Post..."></textarea>
+        <br> <br> <br>
+        <button type="submit">Post</button>
+    </form>
+</body>
+</html>

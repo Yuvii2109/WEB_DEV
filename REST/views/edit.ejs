@@ -1,0 +1,25 @@
+<!-- edit.ejs code -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Post</title>
+    <link rel="stylesheet" href="/styleEdit.css">
+</head>
+<body>
+    <h2>Edit your post - </h2>
+    <p id="id"><u><b>Post ID - </b></u>&nbsp;<%= post.id %></p>
+    <p id="username"><u><b>Post Admin - </b></u>&nbsp;@<%= post.username %></p>
+
+    <!-- Jo neeche likhne jaa rha hoon vo convention hai method-override ki -->
+
+    <form method="post" action="/posts/<%= post.id %>?_method=PATCH">
+        <textarea name="content" id="editted"><%= post.content %></textarea>
+        <br> <br>
+        <button type="submit">Edit</button>
+        <button id="back"><a href="http://localhost:3000/posts" id="back_a">Back</a></button>
+    </form>
+</body>
+</html>
