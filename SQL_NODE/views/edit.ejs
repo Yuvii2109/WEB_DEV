@@ -1,0 +1,46 @@
+<!-- edit.ejs code -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <style>
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            background-color: blanchedalmond;
+            font-style: italic;
+            font-weight: 700;
+        }
+        h2{
+            color: chocolate;
+            text-decoration: underline;
+        }
+        input{
+            border: 2px solid black;
+            border-radius: 3px;
+        }
+        button{
+            border: 2px solid black;
+            background-color: chocolate;
+            font-weight: 700;
+            height: 40px;
+            width: 80px;
+            font-style: italic;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>You are about to edit this username - <%= data.username %></h2>
+    <form method="post" action="/user/<%= data.id %>?_method=PATCH">
+        Reset your username - <input type="text" name="username" placeholder="<%= data.username %>">
+        <br> <br>
+        Enter password - <input type="password" name="password" placeholder="Enter Password">
+        <br> <br> <br>
+        <button>Edit</button>
+    </form>
+</body>
+</html>
